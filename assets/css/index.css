@@ -283,6 +283,10 @@ section img {
     margin: 10px;
 }
 
+.project-link {
+    color: var(--logo-color);
+}
+
 /* Contact Section */
 .contact {
     padding: 2.5rem;
