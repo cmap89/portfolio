@@ -317,9 +317,9 @@ section img {
 }
 
 .contact-form-container .input-field {
+    font-family: var(--font-family);
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
     border: none;
     border: 2px outset var(--primary-color);
