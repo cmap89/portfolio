@@ -1,0 +1,16 @@
+@keyframes bounce {}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 115px;
+    height: 723px;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 34rem;
+    height: 34rem;
+    animation: bounce 2s;
+}
