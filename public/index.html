@@ -2,30 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/construction.css" />
-    <link rel="stylesheet" href="css/index.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
 
-    <!-- Animate CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
 
-    <title>cmap Official Site | Coming Soon</title>
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>cmap</title>
+
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-logo">
+      <img src="./images/Header + logo/CMAP_Logo_Tilted_With_Name_.png" alt="CMAP">
+      <h1>
+        Charlie Pariente
+      </h1>
+    </div>
+    <ul>
+      <!-- SITE TOGGLE!!!!! -->
+      <!-- <div class="site-toggle">
+        Web Dev
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        Musician
+      </div> -->
+      <li>
+        <a href="#more-about" class="nav-link">About</a>
+      </li>
+      <li>
+        <a href="#skills" class="nav-link">Skills</a>
+      </li>
+      <li>
+        <a href="#projects" class="nav-link">Projects</a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-link">Contact</a>
+      </li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="./images/Header + logo/CMAP_Logo_Circle_Tilted.png" alt="CMAP"
+      class="hero-img animate__animated animate__fadeIn">
+    <div class="bio animate__animated animate__fadeIn">
+      <h2 class="bio-title">About Me</h2>
+      <p>INTRO</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta voluptate fugit, sed voluptatibus
+        libero expedita perferendis similique ex quis, omnis sint commodi ipsa dolores quam tempore distinctio ab
+        repellendus?</p>
+    </div>
+  </section>
+  <!-- More about -->
+  <section id="more-about" class="more-about">
+    <h2>More Info</h2>
+    <p>With every project, I aim to create sleek and functional designs within my evolving capabilities. I enjoy
+      challenges that appeal to my logical and methodical problem-solving approach. I find that every puzzle has many
+      different solutions and the fun is in finding them while adding new tools to your repertoire that, in turn,
+      enhance your problem-solving skills.
+    </p>
+    <p>
+      Outside of web development, I am a musician and a multi-instrumentalist specializing in music theory, ear
+      training, songwriting, and music production. I am adept in technology such as Pro Tools, Logic Pro X, and Finale
+      to name a few. As a musician for 23 years, primarily a guitarist, I have written and performed original music in a
+      wide range of genres.
+    </p>
 
-    <main>
-        <img src="./images/Header + logo/CMAP_Logo_Circle_Tilted.png" alt="CMAP"
-            class="hero-img animate__animated animate__bounce">
-        <h1 class="animate__animated ">Under Construction...</h1>
-    </main>
+    <p>
+      Across the board, my technological approach is to utilize shortcuts and optimize workflow in all possible
+      situations. I love learning and getting better than I was before in all aspects of life.
+    </p>
+    <p>
+      In my free time, I enjoy watching movies, playing video games, having fun dinner dates, and going to concerts.
+    </p>
+  </section>
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">Top Skills</h2>
 
+    <div class="skill-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="./icons/SVG/icons8-html-5.svg" alt="html5" class="icon icon-card" loading="lazy">
+        <img src="./icons/SVG/icons8-css3.svg" alt="css3" class="icon icon-card" loading="lazy">
+        <img src="./icons/SVG/icons8-javascript.svg" alt="javascript" class="icon icon-card" loading="lazy">
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img src="./icons/SVG/icons8-bootstrap.svg" alt="bootstrap" class="icon icon-card" loading="lazy">
+        <img src="./icons/SVG/icons8-react-native.svg" alt="react" class="icon icon-card" loading="lazy">
+        <img src="./icons/SVG/icons8-git.svg" alt="git" class="icon icon-card" loading="lazy">
+      </div>
+    </div>
+  </section>
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Recent Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-container project-card animate__animated animate__zoomIn">
+        <img src="./images/yelpcamp2.png" alt="yelp-camp" loading="lazy" class="project-pic">
+        <h3 class="project-title">YelpCamp [Yelp Clone]</h3>
+        <p class="project-details">
+          A fullstack responsive Yelp clone with CRUD capability and geomapping.
+        </p>
+        <p class="project-details">
+          HTML, CSS, JavaScript, MongoDB
+        </p>
+        <a href="https://stark-bayou-95869.herokuapp.com/" class="project-link">Check It Out</a>
+      </div>
+      <div class="project-container project-card animate__animated animate__zoomIn">
+        <img src="./images/drumMachine.png" alt="drum-machine" loading="lazy" class="project-pic">
+        <h3 class="project-title">Drum Machine</h3>
+        <p class="project-details">
+          A basic drum machine with pads that can be triggered with clicks or key presses.
+        </p>
+        <p class="project-details">
+          HTML, CSS, JavaScript
+        </p>
+        <a href="https://cmap89.github.io/drum_machine/" class="project-link">Check It Out</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyyvpdbp" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+              required>
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea class="input-field" id="message" name="message" cols="60" rows="10"
+              placeholder="Enter Your Message" required></textarea>
+          </div>
+          <input type="submit" id="submit-btn" class="submit-btn" value="Submit">
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://www.instagram.com/cmapofficial/" target="_blank">
+      <img src="./icons/SVG/icons8-instagram.svg" alt="Instagram" loading="lazy" class="soc-icon">
+    </a>
+    <a href="https://www.facebook.com/Cmap89" target="_blank">
+      <img src="./icons/SVG/icons8-facebook.svg" alt="Facebook" loading="lazy" class="soc-icon">
+    </a>
+    <a href="https://github.com/cmap89/" target="_blank">
+      <img src="./icons/SVG/icons8-github.svg" alt="GitHub" loading="lazy" class="soc-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/cmap/" target="_blank">
+      <img src="./icons/SVG/icons8-linkedin-circled.svg" alt="LinkedIn" loading="lazy" class="soc-icon">
+    </a>
+  </div>
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up">
+    <img class=" up-arrow" src="./icons/PNG/icons8-up-arrow-64.png" alt="scroll-up">
+  </i>
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; 2022 CMAP Music Entertainment</p>
+    <p class="copy">All Rights Reserved</p>
+  </footer>
+  <script src="./js/basic_functionality.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

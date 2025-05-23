@@ -61,7 +61,7 @@ nav {
     justify-content: space-between;
     padding: 0 1.3rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
     font-size: 1em;
 }
 
