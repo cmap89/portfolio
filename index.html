@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/Header + logo/CMAP_Logo_Tilted_With_Name_.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/Header + logo/CMAP_Logo_Tilted_With_Name_.png" />
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -105,31 +105,61 @@
     </section>
 
     <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Recent Projects</h2>
-      <div class="projects-container">
+    <section class="project-section" id="projects">
+      <h2 class="project-section-title">Recent Projects</h2>
+      <div class="project-card-container">
 
-        <div class="project-container project-card animate__animated animate__zoomIn">
-          <img src="./images/yelpcamp2.png" alt="yelp-camp" loading="lazy" class="project-pic">
-          <h3 class="project-title">YelpCamp [Yelp Clone]</h3>
-          <p class="project-details">
-            A fullstack responsive Yelp clone with CRUD capability and geomapping.
-          </p>
-          <p class="project-details">
-            HTML, CSS, JavaScript, MongoDB
-          </p>
-          <a href="https://stark-bayou-95869.herokuapp.com/" class="project-link">Check It Out</a>
+        <div class="project-card animate__animated animate__zoomIn">
+          <a class="card-link" href="https://cmapofficial.onrender.com/" target="_blank">
+            <img src="./images/cmapofficial_site_thumbnail.png" alt="cmap official website" loading="lazy"
+              class="project-pic">
+            <h3 class="project-title">cmap Official Website</h3>
+            <p class="project-details">
+              The official website of musical artist cmap. Built with component-based architecture using Next.js SSR for
+              optimal performance and responsive design. Deployed on Render with automated GitHub CI/CD pipeline.
+            </p>
+            <p class="project-details">
+              <b>Technologies:</b> Next.js 15, React 19, SASS, Font Awesome
+            </p>
+            <p class="project-details check-out-text">
+              Check It Out
+            </p>
+          </a>
         </div>
-        <div class="project-container project-card animate__animated animate__zoomIn">
-          <img src="./images/drumMachine.png" alt="drum-machine" loading="lazy" class="project-pic">
-          <h3 class="project-title">Drum Machine</h3>
-          <p class="project-details">
-            A basic drum machine with pads that can be triggered with clicks or key presses.
-          </p>
-          <p class="project-details">
-            HTML, CSS, JavaScript
-          </p>
-          <a href="https://cmap89.github.io/drum_machine/" class="project-link">Check It Out</a>
+
+        <div class=" project-card animate__animated animate__zoomIn">
+          <a class="card-link" href="https://cmap89.github.io/minesweeper/" target="_blank">
+            <img src="./images/minesweeper_thumbnail.png" alt="drum-machine" loading="lazy" class="project-pic">
+            <h3 class="project-title">Minesweeper</h3>
+            <p class="project-details">
+              I created this browser-based implementation of the classic Minesweeper game to explore the depth of 2-D
+              arrays. I also leveraged the Claud Sonnet AI model as a productivity enhancer while ensuring that I
+              thoroughly reviewed and validated all processes.
+            </p>
+            <p class="project-details">
+              <b>Technologies:</b> Next.js 15, React 19, SASS, Font Awesome
+            </p>
+            <p class="project-details check-out-text">
+              Check It Out
+            </p>
+          </a>
+        </div>
+        <div class="project-card animate__animated animate__zoomIn">
+          <a class="card-link" href="https://yelpcamp-site.onrender.com/" target="_blank">
+            <img src="./images/yelpcamp2.png" alt="yelp-camp" loading="lazy" class="project-pic">
+            <h3 class="project-title">YelpCamp [Yelp Clone]</h3>
+            <p class="project-details">
+              This is a full-stack web app that allows users to create, review, and browse campsites. It's the
+              culmination of enrolling in an online web dev bootcamp. Its features include user authentication, image
+              uploads, and interactive maps.
+            </p>
+            <p class="project-details">
+              <b>Technologies:</b> Node.js, Express.js, MongoDB, JavaScript, HTML, CSS, Bootstrap
+            </p>
+            <p class="project-details check-out-text">
+              Check It Out
+            </p>
+          </a>
         </div>
 
       </div>

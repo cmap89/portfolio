@@ -208,48 +208,51 @@ p {
 }
 
 /* Projects  Section */
-
-.project-pic {
-    width: 65%;
-    height: 60%;
+.project-section {
+    min-height: 45em;
+    justify-content: space-evenly;
 }
 
-.projects-container {
+.project-card-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.projects-title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.project-container {
-    text-align: center;
-    width: 21.875rem;
-    padding: 1rem;
-}
-
-.project-container p {
-    padding: 0.4rem;
-}
-
-.project-title,
-.project-details {
-    margin-bottom: var(--bottom-margin);
+    justify-content: space-evenly;
+    padding: 0 4rem;
+    width: 100%;
 }
 
 .project-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
+    min-height: 32rem;
+    width: 20rem;
 }
 
-.project-link {
+.card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 40rem;
+    text-align: center;
+    padding: 0px 1rem;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+}
+
+.card-link:hover {
+    color: var(--primary-color);
+}
+
+.project-pic {
+    border-radius: 0.25em;
+    width: 100%;
+    height: 10em;
+}
+
+.check-out-text {
     color: var(--logo-color);
+    &:hover {
+        color: var(--tertiary-color);
+    }
 }
 
 /* Contact Section */
