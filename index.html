@@ -20,13 +20,13 @@
 
 <body>
   <!-- Navbar -->
-  <nav>
+  <nav class="navbar">
     <div class="nav-logo">
-      <h1>
-        <a href="#" class="nav-link">Charles Pariente</a>
+      <h1 class="nav-name">
+        <a href="#" class="nav-logo-link">Charles Pariente</a>
       </h1>
     </div>
-    <ul>
+    <ul class="nav-link-list">
       <li>
         <a href="#more-about" class="nav-link">About</a>
       </li>
@@ -53,7 +53,8 @@
       </div>
       <div class="bio animate__animated animate__fadeIn">
         <h2 class="bio-title">Hi! Charles here.</h2>
-        <p>Welcome to my portfolio. I'm a software developer with a strong foundation in full-stack development. I
+        <p class="hero-par">Welcome to my portfolio. I'm a software developer with a strong foundation in full-stack
+          development. I
           specialize in building and deploying applications using JavaScript (ES6+), Python , Node.js, Express.js ,
           React,
           Next.js , and MongoDB. Feel free to look around.</p>
@@ -61,7 +62,7 @@
     </section>
 
     <!-- More about -->
-    <section id="more-about" class="more-about">
+    <section id="more-about" class="more-about-section">
       <h2>A little more about me</h2>
       <p>With every project, I aim to create sleek and functional designs within my evolving capabilities. I enjoy
         challenges that appeal to my logical and methodical problem-solving approach. I find that every puzzle has many
@@ -87,20 +88,48 @@
     </section>
 
     <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">Top Skills</h2>
+    <section class="skills-section" id="skills">
+      <h2 class="skill-title">Top Skills</h2>
 
-      <div class="skill-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img src="./icons/SVG/icons8-html-5.svg" alt="html5" class="icon icon-card" loading="lazy">
-          <img src="./icons/SVG/icons8-css3.svg" alt="css3" class="icon icon-card" loading="lazy">
-          <img src="./icons/SVG/icons8-javascript.svg" alt="javascript" class="icon icon-card" loading="lazy">
+      <div class="skill-container">
+
+        <div class="skill-strip animate__animated animate__pulse">
+          <a class="skill-link" href="https://nextjs.org/" title="NextJS" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-nextjs-500.svg" alt="nextjs" loading="lazy">
+          </a>
+          <a class="skill-link" href="https://tailwindcss.com/" title="Tailwind CSS" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-tailwind-css.svg" alt="tailwind" loading="lazy">
+          </a>
+          <a class="skill-link" href="https://www.typescriptlang.org/" title="TypeScript" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-typescript.svg" alt="typescript" loading="lazy">
+          </a>
         </div>
-        <div class="second-set animate__animated animate__pulse">
-          <img src="./icons/SVG/icons8-bootstrap.svg" alt="bootstrap" class="icon icon-card" loading="lazy">
-          <img src="./icons/SVG/icons8-react-native.svg" alt="react" class="icon icon-card" loading="lazy">
-          <img src="./icons/SVG/icons8-git.svg" alt="git" class="icon icon-card" loading="lazy">
+
+        <div class="skill-strip animate__animated animate__pulse">
+          <a class="skill-link" href="https://getbootstrap.com/" title="Bootstrap" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-bootstrap.svg" alt="bootstrap" loading="lazy">
+          </a>
+          <a class="skill-link" href="https://react.dev/" title="React" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-react-native.svg" alt="react" loading="lazy">
+          </a>
+          <a class="skill-link" href="https://git-scm.com/" title="Git" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-git.svg" alt="git" loading="lazy">
+          </a>
         </div>
+
+        <div class="skill-strip animate__animated animate__pulse">
+          <a class="skill-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML 5" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-html-5.svg" alt="html5" loading="lazy">
+          </a>
+          <a class="skill-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS" target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-css3.svg" alt="css3" loading="lazy">
+          </a>
+          <a class="skill-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"
+            target="_blank">
+            <img class="icon-img" src="./icons/SVG/icons8-javascript.svg" alt="javascript" loading="lazy">
+          </a>
+        </div>
+
       </div>
     </section>
 
