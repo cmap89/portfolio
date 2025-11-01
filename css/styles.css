@@ -483,43 +483,76 @@ footer {
 }
 
 /* Responsiveness: 480px */
-
-/* @media screen and (max-width: 480px) {
-    .burger-menu {
-        display: block;
-    }
-
-    .nav-link-list {
-        top: 107px;
-        left: 30%;
-        width: 50%;
-    }
-
-    /* Hero Generals /
-    .hero-section {
-        flex-direction: column;
+@media screen and (max-width: 480px) {
+    .navbar {
         align-items: center;
-        padding: 0;
+    }
+    
+    .nav-name {
+        font-size: 1.5rem;
+    }
+
+    .hero-section {
+        min-height: 35em;
     }
 
     .hero-img {
-        width: 24rem;
+        width: 18rem;
+    }
+
+    .bio {
+        width: 82%;
+        height: 15em;
+    }
+
+    .more-about-section {
+        width: 80%;
+        min-height: 57em;
     }
 
     .skills-section {
-        min-height: 78rem;
+        min-height: 37em;
+    }
+    .skill-strip {
+        flex-wrap: wrap;
+        width: 80%;
     }
 
-    .skill-strip{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
+    .project-section {
+        min-height: 110em;
+        justify-content: space-evenly;
+    }
+
+    .project-card-container {
+        min-height: 105em;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+    
+    .card-link {
+        min-height: 40rem;
+    }
+
+    .project-pic {
+        width: 90%;
+    }
+
+    .contact-form-container {
+        width: 90%;
     }
 
     .socials {
-    position: relative;
-    flex-direction: row;
-    width: 100%;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        min-height: 3.5em;
     }
-} */
+
+    footer {
+        min-height: 0;
+    }
+}
